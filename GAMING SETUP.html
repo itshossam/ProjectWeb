@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gaming Setup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+            color: #333; /* Dark gray text */
+        }
+
+        header {
+            background-color: white; /* White header background */
+            color: orange; /* Orange text */
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: blue; /* Blue navigation background */
+            color: #fff; /* White text */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff; /* White text */
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            border: 1px solid #ddd; /* Light gray border */
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f9f9f9; /* Light gray background */
+            width: 300px;
+            opacity: 0; /* Initial opacity set to 0 */
+            transition: opacity 0.5s ease; /* Smooth transition for opacity */
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .product p {
+            margin-bottom: 5px;
+        }
+
+        .product .price {
+            font-weight: bold;
+            color: #ff6600; /* Orange color for price */
+        }
+
+        .product .offer {
+            color: #008000; /* Green color for offer */
+        }
+
+        .login {
+            text-align: right;
+            padding: 10px;
+            color: #333; /* Dark gray text */
+        }
+
+        .login a {
+            color: #333; /* Dark gray text */
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #333; /* Dark background */
+            padding: 10px 0; /* Padding */
+            text-align: center; /* Center-align text */
+            width: 100%; /* Full width */
+            clear: both; /* Clear floats */
+            color: red; /* Red text */
+        }
+
+        #social-media-bar .social-icon {
+            font-size: 24px; /* Icon size */
+            color: red; /* Red icon color */
+            margin: 0 10px; /* Spacing between icons */
+            text-decoration: none; /* Remove underline */
+        }
+
+        #social-media-bar .social-icon:hover {
+            color: orange; /* Icon color on hover */
+        }
+
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: blue; /* Blue background color for button */
+            color: #fff; /* White text color */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: none; /* Initially hidden */
+        }
+
+        #back-to-top:hover {
+            background-color: #0044cc; /* Darker blue on hover */
+        }
+
+        .column {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .column h2 {
+            margin-top: 0;
+        }
+
+        .column p {
+            margin-bottom: 5px;
+        }
+
+        .column a {
+            color: red;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #sponsors {
+            text-align: center;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #sponsors img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        #sponsors h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .sponsor p {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .search-container {
+    position: absolute;
+    top: 20px; /* Ajustez la valeur pour déplacer l'input vers le bas */
+    left: 20px; /* Ajustez la valeur pour déplacer l'input vers la droite */
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gaming Setup</h1>
+        <div class="username" id="usernameSection">
+            <!-- Placeholder for username -->
+        </div>
+        <!-- Ajout du secteur de recherche -->
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Search..." name="search" style="width: 300px;"> <!-- Augmenter la taille de l'input -->
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <!-- Fin du secteur de recherche -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="PCS GAMER.html">PCs Gamer</a></li>
+                <li><a href="GRAPHIQUE CARTES.html">Graphics Cards</a></li>
+                <li><a href="#">Monitors</a></li>
+                <li><a href="#">Keyboards</a></li>
+                <li><a href="#">Mice</a></li>
+                <li><a href="#">Headphones</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+    <section>
+        <div class="product">
+            <img src="https://media.currys.biz/i/currysprod/10240328?$l-large$&fmt=auto" alt="Gaming Keyboard">
+            <h2>Gaming Keyboard</h2>
+            <p>Mechanical keyboard with RGB lighting.</p>
+            <p class="price">$100</p>
+            <p class="offer">Save $20</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://www.adorama.com/images/Large/LOGPRO_2.jpg" alt="Gaming Mouse">
+            <h2>Gaming Mouse</h2>
+            <p>High precision gaming mouse with customizable buttons.</p>
+            <p class="price">$50</p>
+            <p class="offer">Free Shipping</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://easetec.com.pk/wp-content/uploads/2023/01/3-21.jpg" alt="Gaming Monitor">
+            <h2>Gaming Monitor</h2>
+            <p>27-inch QHD gaming monitor with 144Hz refresh rate.</p>
+            <p class="price">$300</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://assets2.razerzone.com/images/pnx.assets/57c2af30b5d9a2b699b3e896b788e00f/500x500-blackshark-v2-hyperspeed.webp" alt="Gaming Headset">
+            <h2>Gaming Headset</h2>
+            <p>Over-ear gaming headset with noise-canceling microphone.</p>
+            <p class="price">$80</p>
+            <p class="offer">Limited Stock</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://kaleidoscope.scene7.com/is/image/OttoUK/600w/X-Rocker-Maverick-Ergonomic-Office-Gaming-Chair---Black-Blue~25W613FRSP.jpg" alt="Gaming Chair">
+            <h2>Gaming Chair</h2>
+            <p>Ergonomic gaming chair with lumbar support.</p>
+            <p class="price">$200</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://nextlevelpc.ma/wp-content/uploads/2024/02/Cartes20Graphiques20MSI20RTX20406020VENTUS202X20BLACK208G20OC20Prix20Maroc20Marrakech20Rabat20Casa_1.webp" alt="Gaming Chair">
+            <h2>Carte graphique</h2>
+            <p>RTX 4060</p>
+            <p class="price">$700</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://nextlevelpc.ma/wp-content/uploads/2023/10/Cartes20Graphiques20MSI20RTX20406020Ti20Gaming20X2016g20Prix20Maroc20Marrakech20Rabat20Casa_1.webp" alt="Gaming Chair">
+            <h2>Carte graphique</h2>
+            <p>RTX 4060 TI</p>
+            <p class="price">$800</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <!-- Sponsors -->
+    <h2 style="text-align: center; font-size: 50px;">Sponsors</h2>
+    <div id="sponsors">
+        <div class="sponsor">
+            <img src="https://cdn.dribbble.com/users/3144264/screenshots/16080159/media/76c03dd932c1e3f797c3fb5869826de9.png" alt="MSI">
+            <p>MSI</p>
+        </div>
+        <div class="sponsor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLNjDGDR1NJfOvpzQy-aegMWH5LT5bQboNdTccRja5uA&s" alt="RAZER">
+            <p>RAZER</p>
+        </div>
+        <div class="sponsor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Intel_logo_%282006-2020%29.svg/800px-Intel_logo_%282006-2020%29.svg.png" alt="INTEL">
+            <p>INTEL</p>
+        </div>
+    </div>
+
+    <!-- Liens Utiles, Client, and Contact -->
+    <div class="column">
+        <h2>Liens Utiles</h2>
+        <div>
+            <p><a href="#">Qui Somme Nous</a></p>
+            <p><a href="#">Nos Services</a></p>
+            <p><a href="#">Contactez-nous</a></p>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>Client</h2>
+        <div>
+            <p><a href="#">Mon Espace</a></p>
+            <p><a href="#">Mes Commandes</a></p>
+            <p><a href="#">Conditions générales de ventes</a></p>
+            <p><a href="#">Politique de confidentialité</a></p>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>Contact</h2>
+        <div>
+            <p><a href="#">Appelez-nous</a></p>
+            <p><a href="#">+212 530 245 555</a></p>
+        </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <footer>
+        <div id="social-media-bar">
+            <a href="https://www.facebook.com/?locale=fr_FR" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/home" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <button id="back-to-top" onclick="backToTop()">Back to Top</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var products = document.querySelectorAll(".product");
+            var delay = 100; // Delay in milliseconds
+
+            products.forEach(function (product, index) {
+                setTimeout(function () {
+                    product.style.opacity = "1";
+                }, index * delay);
+            });
+
+            // Display username if available
+            var usernameSection = document.getElementById("usernameSection");
+            var username = localStorage.getItem("username");
+
+            if (username) {
+                usernameSection.innerHTML = "Welcome, " + username + "!";
+            } else {
+                usernameSection.innerHTML = '<a href="LOGIN.html">Login</a>';
+            }
+        });
+
+        // Function to scroll back to the top of the page
+        function backToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // Show the back to top button when scrolling down
+        window.addEventListener("scroll", function () {
+            var button = document.getElementById("back-to-top");
+            if (window.scrollY > 200) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>

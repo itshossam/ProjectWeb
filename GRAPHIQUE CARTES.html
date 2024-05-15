@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cartes Graphiques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: lightseagreen;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: calc(50% - 20px); /* Calculating width to fit 2 products per row */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            width: 200px; /* Réduire la taille des images */
+        }
+
+        .product h2 {
+            margin-top: 0;
+        }
+
+        .product p {
+            margin-bottom: 5px;
+        }
+
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #back-to-top:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cartes Graphiques</h1>
+    </header>
+
+    <section>
+        <div class="product">
+            <img src="https://nextlevelpc.ma/wp-content/uploads/2024/02/Cartes20Graphiques20MSI20RTX20406020VENTUS202X20BLACK208G20OC20Prix20Maroc20Marrakech20Rabat20Casa_1.webp" alt="Carte Graphique">
+            <div>
+                <h2>RTX 4060</h2>
+                <p>Price: $700</p>
+                <p>VRAM: 8GB GDDR6</p>
+                <p>Manufacturer: MSI</p>
+                <p>Interface: PCIe 4.0</p>
+            </div>
+        </div>
+
+        <!-- Ajout des autres cartes graphiques -->
+        <div class="product">
+            <img src="https://nextlevelpc.ma/wp-content/uploads/2023/10/Cartes20Graphiques20MSI20RTX20406020Ti20Gaming20X2016g20Prix20Maroc20Marrakech20Rabat20Casa_1.webp" alt="Carte Graphique">
+            <div>
+                <h2>RTX 4060 Ti</h2>
+                <p>Price: $800</p>
+                <p>VRAM: 16GB GDDR6</p>
+                <p>Manufacturer: MSI</p>
+                <p>Interface: PCIe 4.0</p>
+            </div>
+        </div>
+
+        <!-- Ajout des autres cartes graphiques -->
+        <div class="product">
+            <img src="https://www.ultrapc.ma/20448/zotac-geforce-rtx-3070-ti-trinity-8gb-gddr6x-nvidia.jpg" alt="Carte Graphique">
+            <div>
+                <h2>RTX 3070 TI</h2>
+                <p>Price: $900</p>
+                <p>VRAM: 8GB GDDR6</p>
+                <p>Manufacturer: NVIDIA</p>
+                <p>Interface: PCIe 4.0</p>
+            </div>
+        </div>
+
+        <!-- Ajout des autres cartes graphiques -->
+        <div class="product">
+            <img src="https://www.ultrapc.ma/19286-large_default/palit-geforce-rtx-3070-gamingpro-8gb-gddr6-nvidia.jpg" alt="Carte Graphique">
+            <div>
+                <h2>RTX 3080</h2>
+                <p>Price: $1200</p>
+                <p>VRAM: 10GB GDDR6X</p>
+                <p>Manufacturer: NVIDIA</p>
+                <p>Interface: PCIe 4.0</p>
+            </div>
+        </div>
+
+        <!-- Ajout des autres cartes graphiques -->
+        <div class="product">
+            <img src="https://www.ultrapc.ma/18213-large_default/msi-geforce-rtx-3080-ventus-3x-plus-oc-10gb-gddr6x-cartes-graphiques.jpg" alt="Carte Graphique">
+            <div>
+                <h2>RTX 3080 Ti</h2>
+                <p>Price: $1500</p>
+                <p>VRAM: 12GB GDDR6X</p>
+                <p>Manufacturer: NVIDIA</p>
+                <p>Interface: PCIe 4.0</p>
+            </div>
+        </div>
+
+        <!-- Ajout des autres cartes graphiques -->
+        <div class="product">
+            <img src="https://www.ultrapc.ma/16391-large_default/msi-geforce-rtx-3090-gaming-x-trio-24gb-gddr6x-cartes-graphiques.jpg" alt="Carte Graphique">
+            <div>
+                <h2>RTX 3090</h2>
+                <p>Price: $2000</p>
+                <p>VRAM: 24GB GDDR6X</p>
+                <p>Manufacturer: NVIDIA</p>
+                <p>Interface: PCIe 4.0</p>
+            </div>
+        </div>
+
+        <!-- Ajout de deux autres cartes graphiques -->
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQMRbxjXgtR_6Qmh4PSAceZQPUz_cYp9JiXbvGNIX1RA&s" alt="Carte Graphique">
+            <div>
+                <h2>RTX 4090</h2>
+                <p>Price: $2500</p>
+                <p>VRAM: 32GB GDDR7</p>
+                <p>Manufacturer: NVIDIA</p>
+                <p>Interface: PCIe 5.0</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://static.gigabyte.com/StaticFile/Image/Global/5071ad85f00939bb2f185a8e6c24c460/Product/29005" alt="Carte Graphique">
+            <div>
+                <h2>RTX 4080 Ti</h2>
+                <p>Price: $1800</p>
+                <p>VRAM: 16GB GDDR7</p>
+                <p>Manufacturer: NVIDIA</p>
+                <p>Interface: PCIe 5.0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bouton pour remonter en haut de la page -->
+    <button id="back-to-top">Back to Top</button>
+
+    <script>
+        // Fonction pour remonter en haut de la page
+        function backToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Afficher le bouton lorsque l'utilisateur descend la page
+        window.addEventListener('scroll', function () {
+            var button = document.getElementById('back-to-top');
+            if (window.scrollY > 200) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // Remonter en haut de la page lorsque le bouton est cliqué
+        document.getElementById('back-to-top').addEventListener('click', backToTop);
+    </script>
+</body>
+
+</html>

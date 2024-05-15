@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register - Gaming Mode</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Press Start 2P', cursive;
+            line-height: 1.5;
+            min-height: 100vh;
+            background-image: url('https://t3.ftcdn.net/jpg/05/55/57/62/360_F_555576290_dcxxy35LdAUb8OqGGxsDzHDcqGpun1KT.jpg');
+            background-size: cover;
+            margin: 0;
+        }
+
+        .main {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            width: 500px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        h1,
+        h3 {
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        button {
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            background-color: #fff;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="main">
+            <h1>Register - Gaming Mode</h1>
+            <h3>Enter your information to create an account</h3>
+            <form id="registerForm" action="index.html" method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name">
+                <br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name">
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <br>
+                <label for="googleAccount">Google Account:</label>
+                <input type="email" id="googleAccount" name="googleAccount" placeholder="Enter your Google Account">
+                <br>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your Phone Number">
+                <br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your Address">
+                <br>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="login.html" style="text-decoration: none;">Log in</a></p>
+        </div>
+    </center>
+
+    <script>
+        // JavaScript to redirect to index.html after successful registration
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            // Prevent form submission
+            event.preventDefault();
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var dob = document.getElementById('dob').value;
+            var googleAccount = document.getElementById('googleAccount').value;
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            var address = document.getElementById('address').value;
+            if (firstName.trim() === '' || lastName.trim() === '' || dob.trim() === '' || googleAccount.trim() === '' || phoneNumber.trim() === '' || address.trim() === '') {
+                alert('All fields are required!');
+                return false;
+            }
+            window.location.href = 'GAMING SETUP.html';
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - Gaming Mode</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Press Start 2P', cursive;
+            line-height: 1.5;
+            min-height: 100vh;
+            background-image: url('https://i.ytimg.com/vi/EA0YC9m6D4s/maxresdefault.jpg');
+            background-size: cover;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            width: 500px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        h1,
+        h3 {
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        button {
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            background-color: #fff;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login - Gaming Mode</h1>
+        <h3>Enter your information to log in</h3>
+        <form id="loginForm" action="index.html" method="post">
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username" placeholder="Enter your Username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password">
+            <br>
+            <button type="submit">Log in</button>
+        </form>
+        <p>Not registered? <a href="REGISTRE.html" style="text-decoration: none;">Create an account</a></p>
+    </div>
+
+    <script>
+        // JavaScript to redirect to index.html after successful login
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            // Prevent form submission
+            event.preventDefault();
+            var username = document.getElementById('Username').value;
+            var password = document.getElementById('password').value;
+            if (password.trim() === '') {
+                alert('Password field cannot be empty!');
+                return false;
+            }
+            localStorage.setItem('username', username);
+            window.location.href = 'GAMING SETUP.html';
+        });
+    </script>
+
+</body>
+
+</html>
